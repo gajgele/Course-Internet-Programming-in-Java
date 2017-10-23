@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form method="post" action="">
+		Ime: <input type="text" size="10" maxlength="40" name="name"> 
+		<br/>
+		Prezime: <input type="text" size="10" maxlength="40" name="lastname"> 
+		<br/>
+		Pol: 
+		<input type="radio" name="pol" value="male">Musko
+		<input type="radio" name="pol" value="female">Zensko
+		<br/>
+		Datum: 
+		<input type="date" name="bday">
+		<br/>
+		<select name="drzava">
+			<option>Izaberite drzavu</option>
+			<option>SFRJ</option>
+			<option>Srbija</option>
+			<option>Burkina Faso</option>
+		</select>
+		<br/>
+		email: <input type="email" size="10" maxlength="40" name="email" required> 
+		<br/>
+		Lozinka: <input type="password" size="10" maxlength="10" name="password" required>
+		<br/>
+		Potvrda: <input type="password" size="10" maxlength="10" name="passwordp" required>
+		<br/>
+		<br/>
+		Pronadjite fajl na disku:
+		<br/>
+		<input name="file" type="file" />
+		<br/>
+		<br/>
+		<input type="submit" value="Prijavi me"> 
+		<input type="reset" value="Odustani">
+	</form>
+</body>
+</html>
