@@ -64,6 +64,30 @@
             </div>
         </div>
         <div class="form-group">
+            <h:outputLabel for="year" class="control-label col-sm-4">Year:</h:outputLabel>
+            <div class="col-sm-4">
+                <h:inputText id="year-id" value="#{studentBean.year}" class="form-control" validatorMessage="Godina je obavezna.">
+                    <f:validateRequired/>
+                </h:inputText>
+            </div>
+        </div>
+        <div class="form-group">
+            <h:outputLabel for="budzet" class="control-label col-sm-4">Budzet:</h:outputLabel>
+            <div class="col-sm-4">
+                <h:inputText id="budzet-id" value="#{studentBean.budzet}" class="form-control" validatorMessage="Budzet je obavezan.">
+                    <f:validateRequired/>
+                </h:inputText>
+            </div>
+        </div>
+        <div class="form-group">
+            <h:outputLabel for="racun" class="control-label col-sm-4">Racun:</h:outputLabel>
+            <div class="col-sm-4">
+                <h:inputText id="racun-id" value="#{studentBean.racun}" class="form-control" validatorMessage="Racun je obavezan.">
+                    <f:validateRequired/>
+                </h:inputText>
+            </div>
+        </div>
+        <div class="form-group">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
                 <div class="col-sm-2">
