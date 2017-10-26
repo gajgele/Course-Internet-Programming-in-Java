@@ -53,21 +53,4 @@ public class Messages {
 		return "index.xhtml";
 	}
 	
-	//smileys
-	public void addSmiley1(){
-		currentMessage.setMessage(currentMessage.getMessage() + ":)");
-	}
-	public void addSmiley2(){
-		currentMessage.setMessage(currentMessage.getMessage() + ":P");
-	}
-	public void addSmiley3(){
-		currentMessage.setMessage(currentMessage.getMessage() + ":]");
-	}
-	public void addSmiley4(){
-		currentMessage.setMessage(currentMessage.getMessage() + ":D");
-	}
-	public void addTimeStamp(){
-		Date date = new Date();
-		currentMessage.setMessage(currentMessage.getMessage() + date.toString());
-	}
 }

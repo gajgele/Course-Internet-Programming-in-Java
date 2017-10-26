@@ -7,16 +7,18 @@
 	<h2>Lab 6.1. - JSF 2.0 Chat</h2>
 	<!-- Tabela za unos nove poruke -->
 	<h:form>
-		<h:outputLabel>Username</h:outputLabel><br/>
-		<h:inputText id="username" value="#{messages.currentMessage.userName}" required="true" requiredMessage=" * Obavezno polje" />
-		<h:message for="username" style="color: red;" /><br/><br/>
-		<h:outputLabel>Message</h:outputLabel> <br/>
-		<h:commandButton value=" :) " action="#{messages.addSmiley1}"/>
-		<h:commandButton value=" :P " action="#{messages.addSmiley2}"/>
-		<h:commandButton value=" :] " action="#{messages.addSmiley3}"/>
-		<h:commandButton value=" :D " action="#{messages.addSmiley4}"/>
-		<h:commandButton value="TimeStamp" action="#{messages.addTimeStamp}"/><br/>
-		<h:inputTextarea rows="5" cols="40" value="#{messages.currentMessage.message}"/><br/>
+		<h:outputLabel>Ime</h:outputLabel><br/>
+		<h:inputText id="firstName" value="#{messages.currentMessage.firstName}" required="true" requiredMessage=" * Obavezno polje" />
+		<h:message for="firstName" style="color: red;" /><br/><br/>
+		<h:outputLabel>Prezime</h:outputLabel><br/>
+		<h:inputText id="lastName" value="#{messages.currentMessage.lastName}" required="true" requiredMessage=" * Obavezno polje" />
+		<h:message for="lastName" style="color: red;" /><br/><br/>
+		<h:outputLabel>mobilni</h:outputLabel><br/>
+		<h:inputText id="mobile" value="#{messages.currentMessage.mobile}" required="true" requiredMessage=" * Obavezno polje" />
+		<h:message for="mobile" style="color: red;" /><br/><br/>
+		<h:outputLabel>email</h:outputLabel><br/>
+		<h:inputText id="email" value="#{messages.currentMessage.email}" required="true" requiredMessage=" * Obavezno polje" />
+		<h:message for="email" style="color: red;" /><br/><br/>
 		<h:commandLink value="Send Message" action="#{messages.addMessage}"/> | 
 		<h:commandLink value="Cancel" action="#{messages.cancelMessage}"/>
 		<hr/>
@@ -25,8 +27,10 @@
 	<h3>Last 9 Messages</h3>
 	<h:dataTable value="#{messages.messages}" var="message" width="100%" rows="9">
 		<h:column>
-		<strong><h:outputText value="#{message.userName}"/></strong> :
-		<h:outputText value="#{message.message}"/><hr/>
+		<h:outputText value="#{message.firstName}"/>
+		<h:outputText value="#{message.lastName}"/>
+		<h:outputText value="#{message.mobile}"/>
+		<h:outputText value="#{message.email}"/><hr/>
 		</h:column>
 	</h:dataTable>
 </body>
