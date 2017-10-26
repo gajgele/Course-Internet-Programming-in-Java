@@ -27,9 +27,9 @@
 	<h3>Last 9 Messages</h3>
 	<h:dataTable value="#{messages.messages}" var="message" width="100%" rows="9">
 		<h:column>
-		<h:outputText value="#{message.firstName}"/>
-		<h:outputText value="#{message.lastName}"/>
-		<h:outputText value="#{message.mobile}"/>
+		<h:outputText value="#{message.firstName}"/><br/>
+		<h:outputText value="#{message.lastName}"/><br/>
+		<h:outputText value="#{message.mobile}"/><br/>
 		<h:outputText value="#{message.email}"/><hr/>
 		</h:column>
 	</h:dataTable>
