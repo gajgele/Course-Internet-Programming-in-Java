@@ -1,10 +1,14 @@
 <html xmlns = "http://www.w3c.org/1999/xhtml"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
 	  xmlns:f = "http://java.sun.com/jsf/core"
 	  xmlns:h = "http://java.sun.com/jsf/html">
 <h:head>
 </h:head>
 <body>
-	<h2>Lab 6.1. - JSF 2.0 Chat</h2>
+		<ui:composition template="/WEB-INF/template/template.xhtml">
+		<ui:define name="title">Lab 6.1. - JSF 2.0 Chat</ui:define>
+		<ui:define name="content">
+
 	<!-- Tabela za unos nove poruke -->
 	<h:form>
 		<h:outputLabel>Username</h:outputLabel><br/>
@@ -29,5 +33,7 @@
 		<h:outputText value="#{message.message}"/><hr/>
 		</h:column>
 	</h:dataTable>
+			</ui:define>
+	</ui:composition>
 </body>
 </html>
